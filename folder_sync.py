@@ -47,6 +47,7 @@ def folders_sync(source_folder, replica_folder, interval, log_file):
 			elif os.path.isdir(replica_path):
 				shutil.rmtree(replica_path)
 
+		#write information onto a log file
 		with open(log_file, 'a') as log:
 			log.write(f'{time.ctime()}: Synch Complete\n')
 			log.write(f'New files/directories: {", ". join(new_content)}\n')
