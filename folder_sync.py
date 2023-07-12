@@ -53,7 +53,8 @@ def folders_sync(source_folder, replica_folder, interval, log_file):
 			log.write(f'New files/directories: {", ". join(new_content)}\n')
 			log.write(f'Modified files/direcotories: {", ".join(modified_content)}\n')
 			log.write(f'Deleted files/directories: {", ".join(deleted_content)}\n\n')
-		
+
+		#prints information on the terminal
 		print(f'{time.ctime()}: Synch Complete\n')
 		print(f'New files/directories: {", ". join(new_content)}\n')
 		print(f'Modified files/directories: {", ".join(modified_content)}\n')
